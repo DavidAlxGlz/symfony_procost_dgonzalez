@@ -7,7 +7,7 @@ Projet IUT Metz - Procost
 # Notes:
 
 ## Log in:
-### Remember me - ne fonctionne pas
+#### Remember me - ne fonctionne pas
 
 ## Layout:
 ### Hidden Layout - ne fonctionne pas
