@@ -21,3 +21,15 @@ Projet IUT Metz - Procost
 
 ## Projets,Employes (Details)
 #### Form ajout temps - ne fonctionne pas -(manque de temps)
+
+# AppFixtures
+
+## Information
+
+## User Admin: user/pasword
+#### david_alx_glz@gmail.com
+#### mexicanito
+
+## User Admin: user/pasword
+#### figaro@gmail.com
+#### baguette
