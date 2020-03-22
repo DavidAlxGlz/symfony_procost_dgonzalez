@@ -1,0 +1,98 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}FormAdd
+{% endblock %}
+
+{% block content %}
+	<main class="app-content">
+		<div class="app-title">
+			<div>
+				<h1>
+					<i class="fa fa-laptop"></i>&nbsp;Ajouter un Projet</h1>
+			</div>
+			<ul class="app-breadcrumb breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="{{ path('app_main') }}">
+						<i class="fa fa-home fa-lg"></i>
+					</a>
+				</li>
+				<li class="breadcrumb-item">
+					<a href="{{ path('app_projets_list') }}">Projets</a>
+				</li>
+				<li class="breadcrumb-item">Ajouter un projet</li>
+			</ul>
+		</div>
+		<div
+			class="tile">
+			
+			{% for flash_type,messages in app.flashes %}
+				{% for message in messages %}
+					<div class="alert alert-{{ flash_type }}" role="alert">
+						<button class="close" type="button" data-dismiss="alert">×</button>
+						<strong>{{ message }}</strong>
+					</div>
+				{% endfor %}
+			{% endfor %}
+			{{ form_start(form) }}
+			<section>
+				<h3>Informations générales</h3>
+				<div class="row mt-4">
+					<div class="offset-md-4 col-md-8">
+						<div class="form-group row">
+							<label class="control-label col-md-3">{{ form_label(form.nom) }}</label>
+							{{ form_errors(form.nom) }}
+							<div class="col-md-9">
+								{{ form_widget(form.nom, {'attr': {'class': 'form-control'} }) }}
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">{{ form_label(form.description) }}</label>
+							{{ form_errors(form.description) }}
+							<div class="col-md-9">
+								{{ form_widget(form.description, {'attr': {'class': 'form-control'} }) }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<hr/>
+			<section>
+				<h3>Production</h3>
+				<div class="row mt-4">
+					<div class="offset-md-4 col-md-8">
+						<div class="form-group row">
+							<label class="control-label col-md-3">{{ form_label(form.prixVente) }}</label>
+							{{ form_errors(form.prixVente) }}
+							<div class="col-md-9">
+								{{ form_widget(form.prixVente, {'attr': {'class': 'form-control'} }) }}
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">{{ form_label(form.dateCreation) }}</label>
+							{{ form_errors(form.dateCreation) }}
+							<div class="col-md-9">
+								{{ form_widget(form.dateCreation, {'attr': {'class': 'form-control'} }) }}
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">{{ form_label(form.dateLivraison) }}</label>
+							{{ form_errors(form.dateLivraison) }}
+							<div class="col-md-9">
+								{{ form_widget(form.dateLivraison, {'attr': {'class': 'form-control'} }) }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<hr/>
+			<div class="row">
+				<div class="offset-md-6 col-md-6">
+					<button type="submit" class="btn btn-success">
+						<i class="fa fa-save"></i>Enregistrer</a>
+				</div>
+			</div>
+			{{ form_end(form) }}
+		</div>
+	</main>
+
+{% endblock %}
