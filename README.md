@@ -10,14 +10,14 @@ Projet IUT Metz - Procost
 #### Remember me - ne fonctionne pas
 
 ## Layout:
-### Hidden Layout - ne fonctionne pas
+#### Hidden Layout - ne fonctionne pas
 
 ## Tableau de bord
-### Top employe - ne fonctionne pas -(manque de temps)
-### Les derniers projets (cout) 
+#### Top employe - ne fonctionne pas -(manque de temps)
+#### Les derniers projets (cout) 
 
 ## Projets,Employes,Metiers
-### Pagination - ne fonctionne pas -(Je n'ai aucune idée)
+#### Pagination - ne fonctionne pas -(Je n'ai aucune idée)
 
 ## Projets,Employes (Details)
-### Form ajout temps - ne fonctionne pas -(manque de temps)
+#### Form ajout temps - ne fonctionne pas -(manque de temps)
