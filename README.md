@@ -30,6 +30,6 @@ Projet IUT Metz - Procost
 #### david_alx_glz@gmail.com
 #### mexicanito
 
-## User Admin: user/pasword
+## User Employe: user/pasword
 #### figaro@gmail.com
 #### baguette
